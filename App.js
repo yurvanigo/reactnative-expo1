@@ -2,9 +2,12 @@ import React,{ Component }  from 'react';
 import { FlatList, ActivityIndicator, Text, View,Button, AppRegistry  } from 'react-native';
 import { Container, Header, Content, Footer, FooterTab, Icon,  Badge } from 'native-base';
 import Login from './src/screens/Login';
-import Secured from './src/screens/Secured';
+// import Secured from './src/screens/Secured';
+// import Scancode from './src/screens/Scancode';
+// import Menu from './src/screens/Menu';
+// import Scancode from './src/screens/Scancode';
+// import Crud from './src/screens/Crud';
 import Scancode from './src/screens/Scancode';
-import Menu from './src/screens/Menu';
 
 
 export default class App extends React.Component {
@@ -17,7 +20,7 @@ export default class App extends React.Component {
 
    
     if (this.state.isLoggedIn) 
-      return <Menu 
+      return <Scancode
           //  onLogoutPress={() => this.setState({isLoggedIn: false})}
         />;
     else 
